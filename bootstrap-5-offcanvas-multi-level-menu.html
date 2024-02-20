@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap 5 -->
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <!-- fonts -->
+</head>
+<style>
+    .social-icon-border {
+    border: 2px solid #bb9847;
+    border-radius: 10px;
+}
+
+.social-icon-size {
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social-link-cont {
+    text-align: center;
+    display: flex;
+}
+
+.menu-body-1 {
+    background-color: #450012;
+}
+
+.nav-bar-1 {
+    background-color: #450012;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.main-menu-header-1 {
+    background-color: #450012;
+}
+
+.main-meni-title-1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Allura', cursive;
+    font-size: 25px;
+    color: #bb9847;
+}
+
+.sub-menu-links-1 {
+    text-align: center;
+    font-family: 'Allura', cursive;
+    font-size: 25px;
+    color: #bb9847;
+}
+
+.nav-bar-container-1 {
+    background-color: #450012;
+    width: 100%;
+}
+</style>
+<body>
+    <main>
+        <!-- main menu -->
+        <div class="main-menu-header-1" style="background-color:#450012;">
+            <div>
+                <div class="logo col-12 col-lg-9">
+                    <a href="#">
+                        <img alt="alt" style="width:100%; margin:10px;" class="img-fluid"
+                            src="#"></a>
+                </div>
+            </div>
+            <nav class="navbar nav-bar-1">
+                <div class="container-fluid nav-bar-container-1">
+                    <div class="search-here" style="margin-top: -20px; color:#ffff; margin-left:20px;">&nbsp;</div>
+                    <button class="navbar-toggler" style="background-color:#ffff;" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="false">
+                        <div class="offcanvas-header main-menu-header-1">
+                            <h5 class="offcanvas-title main-meni-title-1" id="offcanvasNavbarLabel">title here</h5>
+                            <button type="button" class="btn-close" style="background-color:#ffff;"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body menu-body-1">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#" onclick="openSubMenu('SubMenu1')">menu 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#" onclick="openSubMenu('SubMenu2')">menu 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#" onclick="openSubMenu('SubMenu3')">menu 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#" onclick="openSubMenu('SubMenu4')">menu 4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#" onclick="openSubMenu('SubMenu5')">menu 4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1"
+                                        style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                        href="#">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sub-menu-links-1 bi bi-cart"
+                                        style="text-align: center; font-size:25px; color:#bb9847;"
+                                        href="#"></a>
+                                </li>
+                                <!-- social links -->
+                                <p class="sub-menu-links-1">Follow Our
+                                    Social Media!</p>
+                                <ul class="social-link-cont">
+                                    <a href="#"
+                                        class="bi bi-instagram social-icon-size social-icon-border glass-btn red-btn shadow-lg"
+                                        style="color: #ac2bac;"></a>
+                                    <a href="#"
+                                        class="bi bi-facebook social-icon-size social-icon-border glass-btn red-btn"
+                                        style="color: #3b5998;"></a>
+                                    <h2></h2>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- sub menu 1-->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1"
+                aria-labelledby="offcanvasSubMenu1Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1Label">Textbooks</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">submenu item1</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- school supplies sub menu -->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu2"
+                aria-labelledby="offcanvasSubMenu2Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu2Label">School Supplies</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">submenu 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- technology sub menu -->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu3"
+                aria-labelledby="offcanvasSubMenu3Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu3Label">Technology</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item sub-menu-links-1"><a href="#"
+                                class="nav-link"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;">submenu 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- leval 2 main menu -->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu4"
+                aria-labelledby="offcanvasSubMenu4Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu4Label">leval 2 main menu</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-1')">dropdown submenu 1.1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-2')">dropdown submenu 1.2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-3')">dropdown submenu 1.3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-4')">dropdown submenu 1.4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-5')">ldropdown submenu 1.5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-6')">dropdown submenu 1.6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu1-7')">dropdown submenu 1.7</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- leval 2 main menu -->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu5"
+                aria-labelledby="offcanvasSubMenu5Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu5Label">leval 2 main menu</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item sub-menu-links-1">
+                            <a class="nav-link"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu2-1')">dropdown SubMenu2.1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#" onclick="openSubMenu('SubMenu2-2')">dropdown SubMenu2.2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- merchandise sub-sub menu -->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-1"
+                aria-labelledby="offcanvasSubMenu1-1Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-2"
+                aria-labelledby="offcanvasSubMenu1-2Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1-2Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-3"
+                aria-labelledby="offcanvasSubMenu1-3Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1-3Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-4"
+                aria-labelledby="offcanvasSubMenu1-4Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1-4Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-5"
+                aria-labelledby="offcanvasSubMenu1-5Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1-5Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-6"
+                aria-labelledby="offcanvasSubMenu1-6Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1-6Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu1-7"
+                aria-labelledby="offcanvasSubMenu1-7Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu1-7Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item sub-menu-links-1">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grad sub-sub menu -->
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu2-1"
+                aria-labelledby="offcanvasSubMenu2-1Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu2-1Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end menu-body-1" tabindex="-1" id="offcanvasSubMenu2-2"
+                aria-labelledby="offcanvasSubMenu2-2Label" data-bs-backdrop="false">
+                <div class="offcanvas-header main-menu-header-1">
+                    <h5 class="offcanvas-title main-meni-title-1" id="offcanvasSubMenu2-2Label">title here</h5>
+                    <button type="button" class="btn-close" style="background-color:#ffff;" data-bs-dismiss="offcanvas"
+                        aria-label="Close" onclick="closeParentOffcanvas()"></button>
+                </div>
+                <div class="offcanvas-body menu-body-1">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-meni-title-1 sub-menu-links-1">
+                        <li class="nav-item">
+                            <a class="nav-link sub-menu-links-1"
+                                style="text-align: center; font-family: 'Allura', cursive; font-size: 25px; color:#bb9847;"
+                                href="#">link title here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2></h2>
+        </div>
+    </main>
+    <script>
+    function openSubMenu(subMenuId) {
+    // Hide parent offcanvas
+    const parentOffcanvas = document.getElementById('offcanvasNavbar');
+    const parentOffcanvasInstance = new bootstrap.Offcanvas(parentOffcanvas);
+    parentOffcanvasInstance.hide();
+
+    // Show corresponding submenu
+    const subOffcanvas = document.getElementById('offcanvas' + subMenuId);
+    const subOffcanvasInstance = new bootstrap.Offcanvas(subOffcanvas);
+    subOffcanvasInstance.show();
+    }
+
+    function closeParentOffcanvas() {
+    const parentOffcanvas = document.getElementById('offcanvasNavbar');
+    const parentOffcanvasInstance = new bootstrap.Offcanvas(parentOffcanvas);
+    parentOffcanvasInstance.show();
+    document.querySelector('.offcanvas-backdrop').remove();
+    }
+    </script>
+</body>
+
+</html>
